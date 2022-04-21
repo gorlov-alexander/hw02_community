@@ -21,15 +21,11 @@
     </title>    
   </head>
   <body>
-    <header>
-        {% include 'includes/header.html' %}
-    </header>
+    {% include 'includes/header.html' %}
     <main> 
         {% block content %}
             А здесь содержание, но увы! =) 
         {% endblock %}
     </main>
-    <footer>
-        {% include 'includes/footer.html' %}
-    </footer>
+    {% include 'includes/footer.html' %}
   </body>
