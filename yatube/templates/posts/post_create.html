@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block title %}
+  Создание нового поста
+{% endblock %}  
+
+{% block content %}
+  <form method="post" action="{% url 'posts:post_create' %}">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <input type="submit" value="Отправить">
+  </form> 
+{% endblock %} 
